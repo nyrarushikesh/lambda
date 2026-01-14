@@ -1,0 +1,30 @@
+{
+  "name": "jawa-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for jawa project",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ts-node build.ts",
+    "prebuild": "rimraf dist",
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
+    "@types/node": "^20.11.5",
+    "esbuild": "^0.19.12",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1529.0"
+  }
+}
